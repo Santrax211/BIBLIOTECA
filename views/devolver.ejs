@@ -1,0 +1,17 @@
+<% layout('layout') -%>
+<h2>Registrar Devolución</h2>
+<form action="/prestamos/devolver" method="POST">
+    <div class="form-group">
+        <label for="IDPrestamos">ID Préstamo</label>
+        <input type="number" name="IDPrestamos" id="IDPrestamos" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Fecha_Devolucion_Real">Fecha Devolución Real</label>
+        <input type="date" name="Fecha_Devolucion_Real" id="Fecha_Devolucion_Real" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Multa">Multa</label>
+        <input type="number" name="Multa" id="Multa" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar Devolución</button>
+</form>
